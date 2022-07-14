@@ -16,18 +16,42 @@
    <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  
+  <div class="header">
+    <h1>IP Address Tracker</h1>
 
-  IP Address Tracker
-
-  Search for any IP address or domain
-
-  IP Address
-  Location
-  Timezone
-    UTC <!-- add offset value dynamically using the API -->
-  ISP
+    <div class="input-wrapper">
+      <input type="text" id="input" placeholder="Search for any IP address or domain">
+      <button id="search">
+        <img src="images/icon-arrow.svg" alt=">">
+      </button>
+    </div>
+    
+    <div class="details">
+      <div class="info-wrapper">
+        <h2>IP Address</h2>
+        <span id="ip"></span>
+      </div>
+      <div class="seperator"></div>
+      <div class="info-wrapper">
+        <h2>Location</h2>
+        <span id="location"></span>
+      </div>
+      <div class="seperator"></div>
+      <div class="info-wrapper">
+        <h2>Timezone</h2>
+        <span id="timezone"></span>
+      </div>
+      <div class="seperator"></div>
+      <div class="info-wrapper">
+        <h2>ISP</h2>
+        <span id="isp"></span>
+      </div>
+    </div>
+  </div>
 
   <div id="map"></div>
+
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="script.js"></script>
 </body>
